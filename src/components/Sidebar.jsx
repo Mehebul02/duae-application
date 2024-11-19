@@ -1,32 +1,23 @@
-import React from 'react';
-
+import { FaHandPaper } from "react-icons/fa";
 const Sidebar = () => {
-    return (
-        <div>
-            {/* Sidebar */}
-      <aside className="w-1/4 bg-white border-r p-4">
-        <h2 className="text-xl font-bold mb-4">Categories</h2>
-        <input
-          type="text"
-          placeholder="Search Categories"
-          className="w-full mb-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
-        />
-        <ul>
-          <li className="mb-2">
-            <button className="block text-left w-full p-2 bg-green-100 rounded">
-              Dua's Importance
-            </button>
-          </li>
-          <li className="mb-2">
-            <button className="block text-left w-full p-2">Dua's Excellence</button>
-          </li>
-          <li className="mb-2">
-            <button className="block text-left w-full p-2">Time of Dua</button>
-          </li>
-        </ul>
-      </aside>
+  return (
+    <div className="bg-white h-screen p-8 rounded-md">
+      {/* Sidebar */}
+      <aside className="flex flex-col justify-between">
+        {/* 1st div  */}
+        <div className="flex  bg-primary-color p-4 rounded-lg cursor-pointer">
+          <FaHandPaper className="text-white" />
+          <FaHandPaper className="text-white" />
         </div>
-    );
+
+        {/* middle section  */}
+        <div>all icon</div>
+
+        {/* last section  */}
+        <div>han icon</div>
+      </aside>
+    </div>
+  );
 };
 
 export default Sidebar;
