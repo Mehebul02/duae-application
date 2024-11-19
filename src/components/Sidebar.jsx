@@ -1,4 +1,4 @@
-import { FaHandPaper } from "react-icons/fa";
+import { FaHandPaper, FaHome } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="bg-white h-screen p-8 rounded-md">
@@ -11,7 +11,13 @@ const Sidebar = () => {
         </div>
 
         {/* middle section  */}
-        <div>all icon</div>
+        <div className="mt-20">
+        <div className="flex justify-center items-center bg-[#EBEEF2] w-10 h-10 mx-auto rounded-full hover:bg-gray-300 transition-all cursor-pointer">
+  <span className="text-xl text-gray-500 hover:text-gray-700 transition-all">
+    <FaHome />
+  </span>
+</div>
+        </div>
 
         {/* last section  */}
         <div>han icon</div>
