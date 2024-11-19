@@ -1,4 +1,12 @@
-import { FaHandPaper, FaHome } from "react-icons/fa";
+import { FaHandPaper, FaHome  } from "react-icons/fa";
+import { GiFlowers } from "react-icons/gi";
+import { TiLightbulb } from "react-icons/ti";
+import LeftSideIcon from "./sherad/LeftSideIcon";
+import { CiMedicalClipboard } from "react-icons/ci";
+import { FaRegBookmark } from "react-icons/fa";
+import { FaComments } from "react-icons/fa";
+import { FaBookOpen } from "react-icons/fa6";
+import { GiOpenBook } from "react-icons/gi";
 const Sidebar = () => {
   return (
     <div className="bg-white h-screen p-8 rounded-md">
@@ -11,12 +19,15 @@ const Sidebar = () => {
         </div>
 
         {/* middle section  */}
-        <div className="mt-20">
-        <div className="flex justify-center items-center bg-[#EBEEF2] w-10 h-10 mx-auto rounded-full hover:bg-gray-300 transition-all cursor-pointer">
-  <span className="text-xl text-gray-500 hover:text-gray-700 transition-all">
-    <FaHome />
-  </span>
-</div>
+        <div className="mt-20 ">
+            
+         <LeftSideIcon ICON={<FaHome/>}/>
+         <LeftSideIcon ICON={<GiFlowers/>}/>
+         <LeftSideIcon ICON={<TiLightbulb/>}/>
+         <LeftSideIcon ICON={<FaRegBookmark  />}/>
+         <LeftSideIcon ICON={<CiMedicalClipboard />}/>
+         <LeftSideIcon ICON={<FaComments />}/>
+         <LeftSideIcon ICON={<GiOpenBook />}/>
         </div>
 
         {/* last section  */}
