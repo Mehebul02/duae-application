@@ -16,11 +16,11 @@ const DuasPage = () => {
   ];
   return (
     <div className="bg-white   rounded-lg ">
-      <div className="flex justify-center items-center bg-primary-color w-80 h-14 rounded-t-md">
+      <div className="flex justify-center items-center bg-primary-color w-96 h-14 rounded-t-md">
         <h1 className="text-md text-white">Categories</h1>
       </div>
       <div className="">
-        <label className="input input-bordered bg-white flex items-center gap-2 mt-2 w-72 mx-auto">
+        <label className="input input-bordered bg-white flex items-center gap-2 mt-2 w-80 mx-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -39,16 +39,18 @@ const DuasPage = () => {
 
       <div className="collapse ">
         <input type="checkbox" />
-        <div className="collapse-title  font-medium">
-          <div className="flex flex-row justify-between gap-5 bg-[#E8F0F5] p-2 rounded-md">
-            <Image src={dui} alt="dui" />
+        <div className="collapse-title  ">
+          <div className="flex flex-row justify-between items-center  bg-[#E8F0F5] p-2 rounded-md ">
+           
+           <Image src={dui} alt="dui" className="bg-white w-14 h-14 p-4 rounded-lg "/>
+           
             <div className="">
               <h1 className="text-[14px] text-black font-inter font-semibold">Dua's Importance</h1>
               <h2 className="text-[12px] font-inter mt-1"> Subcategory: 7</h2>
             </div>
             <div>
-              <h1>21</h1>
-              <h5>Duas</h5>
+              <h1 className="text-[14px] text-black font-inter font-semibold">21</h1>
+              <h5 className="text-[10px] font-inter mt-1">Duas</h5>
             </div>
           </div>
         </div>
