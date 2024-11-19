@@ -1,4 +1,4 @@
-import { FaHandPaper, FaHome  } from "react-icons/fa";
+import { FaHandHoldingHeart, FaHandPaper, FaHome  } from "react-icons/fa";
 import { GiFlowers } from "react-icons/gi";
 import { TiLightbulb } from "react-icons/ti";
 import LeftSideIcon from "./sherad/LeftSideIcon";
@@ -19,7 +19,7 @@ const Sidebar = () => {
         </div>
 
         {/* middle section  */}
-        <div className="mt-20 ">
+        <div className="mt-10 ">
             
          <LeftSideIcon ICON={<FaHome/>}/>
          <LeftSideIcon ICON={<GiFlowers/>}/>
@@ -31,7 +31,13 @@ const Sidebar = () => {
         </div>
 
         {/* last section  */}
-        <div>han icon</div>
+        <div className="mt-10">
+
+        <div className="flex justify-center bg-primary-color p-4 rounded-lg cursor-pointer">
+          <FaHandHoldingHeart className="text-white" />
+         
+        </div>
+        </div>
       </aside>
     </div>
   );
