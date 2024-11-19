@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    
   ],
   theme: {
     extend: {
@@ -12,7 +13,11 @@ module.exports = {
         foreground: "var(--foreground)",
          "primary-color":'#1FA45B'
       },
+      fontFamily: {
+        inter: ['Inter, sans-serif;'],
+
+      }
     },
   },
-  plugins: [],
+  plugins: [ require("daisyui")],
 };
