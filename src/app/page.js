@@ -11,7 +11,7 @@ export default function Home() {
   <div className="bg-[#EBEEF2] h-screen">
      <Container className='pt-14'>
      <div className="flex  justify-between ">
-     <div className="flex gap-14">
+     <div className="flex gap-10">
      <Sidebar />
      <DuasPage/>
      </div>
