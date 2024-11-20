@@ -1,4 +1,4 @@
-import { dui } from "@/assets/images";
+import { dui, zikirer } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 import CustomDuaCategories from "./dua-categories/CustomDuaCategories";
@@ -33,6 +33,7 @@ const DuasPage = () => {
             />
           </label>
         </div>
+        {/* 2nd categories  */}
         <CustomDuaCategories
           image={dui}
           category="Dua's Importance"
@@ -48,8 +49,19 @@ const DuasPage = () => {
             "Seeking whatever good Allah can bestow",
             "Shelter from horror, misery, evil consequences and rejoicing of the enemy"
           ]}
-        
-        />
+    />
+        {/* 2nd categories  */}
+        <CustomDuaCategories
+          image={zikirer}
+          category="Dua's Excellence"
+          subcategory="Subcategory: 1"
+          count={15}
+          countTitle="Duas"
+          categoryTitles={[
+            "Excellence of doing Tasbeeh, Tahmid, Tahlil, Takbeer"
+          
+          ]}
+    />
       </div>
     </div>
   );
