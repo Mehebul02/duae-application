@@ -1,4 +1,4 @@
-import { dua_kobuler, dui, zikirer } from "@/assets/images";
+import { dua_kobuler, dui, jader_dua, zikirer } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 import CustomDuaCategories from "./dua-categories/CustomDuaCategories";
@@ -73,6 +73,43 @@ const DuasPage = () => {
             countTitle="Duas"
             categoryTitles={[
               "Times and places when dua will be accepted"
+            ]}
+          />
+          {/* 4th categories  */}
+          <CustomDuaCategories
+            image={jader_dua}
+            category="Dua Acceptance"
+            subcategory="Subcategory: 1"
+            count={14}
+            countTitle="Duas"
+            categoryTitles={[
+              "Those whose duas are accepted"
+            ]}
+          />
+          <CustomDuaCategories
+            image={dui}
+            category="Dua's Importance"
+            subcategory="Subcategory: 7"
+            count={21}
+            countTitle="Duas"
+            categoryTitles={[
+              "The servant is dependent on his Lord",
+              "The most important thing to ask Allah for",
+              "Ask for paradise & protection from fire",
+              "Dua to remain steadfast on the religion",
+              "Dua of good outcome in all deeds",
+              "Seeking whatever good Allah can bestow",
+              "Shelter from horror, misery, evil consequences and rejoicing of the enemy"
+            ]}
+          />
+          <CustomDuaCategories
+            image={jader_dua}
+            category="Dua Acceptance"
+            subcategory="Subcategory: 1"
+            count={14}
+            countTitle="Duas"
+            categoryTitles={[
+              "Those whose duas are accepted"
             ]}
           />
        
