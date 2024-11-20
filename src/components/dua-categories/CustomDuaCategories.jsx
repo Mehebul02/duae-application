@@ -15,7 +15,7 @@ const CustomDuaCategories = ({ image, category, subcategory,count,countTitle,cat
             />
 
             <div className="">
-              <h1 className="text-[14px] text-black font-inter font-semibold">
+              <h1 className="text-[12px] text-black font-inter font-semibold">
                 {/* Dua's Importance */}
                 {category}
               </h1>
@@ -26,7 +26,7 @@ const CustomDuaCategories = ({ image, category, subcategory,count,countTitle,cat
             </div>
           </div>
           <div>
-            <h1 className="text-[14px] text-black font-inter font-semibold">
+            <h1 className="text-[12px] text-black font-inter font-semibold">
               {/* 21 */}
               {count}
             </h1>

@@ -1,19 +1,18 @@
-import { dui, zikirer } from "@/assets/images";
+import { dua_kobuler, dui, zikirer } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 import CustomDuaCategories from "./dua-categories/CustomDuaCategories";
 
 const DuasPage = () => {
-
   return (
     <div className="">
       <h1 className="text-xl text-black font-inter mb-2">Duas Page</h1>
-      <div className="bg-white border  rounded-lg w-80">
-        <div className="flex justify-center items-center bg-primary-color w-80 h-14 rounded-t-md">
+      <div className="bg-white border rounded-lg w-80  ">
+        <div className="flex justify-center items-center bg-primary-color h-14 rounded-t-md">
           <h1 className="text-md text-white font-inter">Categories</h1>
         </div>
         <div className="p-2">
-          <label className="input input-bordered bg-white flex items-center gap-2 mt-2  mx-auto">
+          <label className="input input-bordered bg-white flex items-center gap-2 mt-2 mx-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -33,35 +32,53 @@ const DuasPage = () => {
             />
           </label>
         </div>
-        {/* 2nd categories  */}
-        <CustomDuaCategories
-          image={dui}
-          category="Dua's Importance"
-          subcategory="Subcategory: 7"
-          count={21}
-          countTitle="Duas"
-          categoryTitles={[
-            "The servant is dependent on his Lord",
-            "The most important thing to ask Allah for",
-            "Ask for paradise & protection from fire",
-            "Dua to remain steadfast on the religion",
-            "Dua of good outcome in all deeds",
-            "Seeking whatever good Allah can bestow",
-            "Shelter from horror, misery, evil consequences and rejoicing of the enemy"
-          ]}
-    />
-        {/* 2nd categories  */}
-        <CustomDuaCategories
-          image={zikirer}
-          category="Dua's Excellence"
-          subcategory="Subcategory: 1"
-          count={15}
-          countTitle="Duas"
-          categoryTitles={[
-            "Excellence of doing Tasbeeh, Tahmid, Tahlil, Takbeer"
+        {/* Scrollable container */}
+        <div
+          className=" h-96 overflow-y-scroll hover:scroll-auto focus:scroll-auto "
+          tabIndex={0}  // Makes the container focusable for keyboard/mouse interaction
+        >
+          <CustomDuaCategories
+            image={dui}
+            category="Dua's Importance"
+            subcategory="Subcategory: 7"
+            count={21}
+            countTitle="Duas"
+            categoryTitles={[
+              "The servant is dependent on his Lord",
+              "The most important thing to ask Allah for",
+              "Ask for paradise & protection from fire",
+              "Dua to remain steadfast on the religion",
+              "Dua of good outcome in all deeds",
+              "Seeking whatever good Allah can bestow",
+              "Shelter from horror, misery, evil consequences and rejoicing of the enemy"
+            ]}
+          />
+          {/* 2nd categories  */}
+          <CustomDuaCategories
+            image={zikirer}
+            category="Dua's Excellence"
+            subcategory="Subcategory: 1"
+            count={15}
+            countTitle="Duas"
+            categoryTitles={[
+              "Excellence of doing Tasbeeh, Tahmid, Tahlil, Takbeer"
+            ]}
+          />
+          {/* 3rd categories  */}
+          <CustomDuaCategories
+            image={dua_kobuler}
+            category="Time of Dua"
+            subcategory="Subcategory: 1"
+            count={30}
+            countTitle="Duas"
+            categoryTitles={[
+              "Times and places when dua will be accepted"
+            ]}
+          />
+       
           
-          ]}
-    />
+         
+        </div>
       </div>
     </div>
   );
