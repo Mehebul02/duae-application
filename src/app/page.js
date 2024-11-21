@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
 
   return (
-  <div className="bg-[#EBEEF2] h-screen">
+  <div className="bg-[#EBEEF2] h-full">
      <Container className='pt-14'>
      <div className="flex  justify-between ">
      <div className="flex gap-10">
