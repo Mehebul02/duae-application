@@ -7,6 +7,7 @@ import profile from '../images/profile.svg'
 import language from '../images/language.svg'
 import general from '../images/general.svg'
 import front from '../images/font (1).svg'
+import duacard from '../images/duacard.svg'
 
 
-export  {dui,zikirer,dua_kobuler,jader_dua,profile,language,general,front}
+export  {dui,zikirer,dua_kobuler,jader_dua,profile,language,general,front,duacard}
