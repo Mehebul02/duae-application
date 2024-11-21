@@ -8,9 +8,9 @@ import Image from "next/image";
 export default function Home() {
 
   return (
-  <div className="bg-[#EBEEF2] h-full">
-     <Container className='pt-14'>
-     <div className="flex  justify-center gap-10">
+  <div className="bg-[#EBEEF2]">
+     <Container className='pt-10'>
+     <div className="flex  justify-center ">
      <div className="flex gap-10">
      <Sidebar />
      <DuasPage/>

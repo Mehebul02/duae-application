@@ -4,7 +4,7 @@ import React from "react";
 const CustomDuaCategories = ({ image, category, subcategory,count,countTitle,categoryTitles }) => {
   return (
     <div className="collapse cursor-pointer">
-      <input type="checkbox" />
+      <input type="checkbox"/>
       <div className="collapse-title  ">
         <div className="flex flex-row justify-between items-center  bg-[#E8F0F5] p-2 rounded-md  w-full">
           <div className="flex justify-center items-center gap-5">

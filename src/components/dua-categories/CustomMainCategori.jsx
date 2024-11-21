@@ -23,11 +23,11 @@ const CustomMainCategori = ({image,title,description,reference, referenceTitle,}
         <div className="flex gap-5 justify-end cursor-pointer">
           
             
-             <span> <MdOutlineContentCopy/> </span>
-            <span> <CiBookmark/> </span>
-            <span> <FaRegLightbulb/> </span>
-            <span> <IoShareSocialOutline/> </span>
-            <span> <MdReportGmailerrorred/> </span> 
+             <span className="tooltip" data-tip="Copy "> <MdOutlineContentCopy/> </span>
+            <span className="tooltip" data-tip="Bookmark"> <CiBookmark/> </span>
+            <span className="tooltip" data-tip="Memories"> <FaRegLightbulb/> </span>
+            <span className="tooltip" data-tip="Share"> <IoShareSocialOutline/> </span>
+            <span className="tooltip" data-tip="Report"> <MdReportGmailerrorred/> </span> 
 
           
         </div>
