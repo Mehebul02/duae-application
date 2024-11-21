@@ -9,7 +9,7 @@ import { FaBookOpen } from "react-icons/fa6";
 import { GiOpenBook } from "react-icons/gi";
 const Sidebar = () => {
   return (
-    <div className="bg-white h-screen p-8 rounded-md">
+    <div className="bg-white  p-8 rounded-md">
       {/* Sidebar */}
       <aside className="flex flex-col justify-between">
         {/* 1st div  */}
