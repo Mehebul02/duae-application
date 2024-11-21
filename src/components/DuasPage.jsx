@@ -34,7 +34,7 @@ const DuasPage = () => {
         </div>
         {/* Scrollable container */}
         <div
-          className=" h-96 overflow-y-scroll hover:scroll-auto focus:scroll-auto "
+          className=" h-[450px] overflow-y-scroll hover:scroll-auto focus:scroll-auto "
           tabIndex={0}  // Makes the container focusable for keyboard/mouse interaction
         >
           <CustomDuaCategories

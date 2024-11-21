@@ -119,7 +119,7 @@ const LeftSide = () => {
                   />
                   <div>
                     <h1 className="text-[12px] text-black font-inter font-semibold">
-                      Night Mode
+                    Appearance Settings
                     </h1>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const LeftSide = () => {
             <div className="collapse-content">
               <div className="space-x-10 flex justify-center">
                 <h3 className="text-[12px] text-[#201d20] font-semibold">
-                  Enable Night Mode
+                Night Mode
                 </h3>
                 <input
                   type="checkbox"
