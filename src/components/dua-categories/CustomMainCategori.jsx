@@ -1,11 +1,47 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
+import toast from 'react-hot-toast';
 import { CiBookmark } from 'react-icons/ci';
 import { FaRegLightbulb } from 'react-icons/fa';
 import { IoShareSocialOutline } from 'react-icons/io5';
 import { MdOutlineContentCopy, MdReportGmailerrorred } from 'react-icons/md';
 
 const CustomMainCategori = ({image,title,description,reference, referenceTitle,}) => {
+
+    const handleCopy = () => {
+        toast.success("Copied" , {
+            style: {
+              background: "#000000", 
+              color: "#ffff",         
+            },
+          });
+        // Add your copy logic here, for example:
+        navigator.clipboard.writeText("");
+     
+      };
+    const handleMemories = () => {
+        toast.success("Coming Soon In Sha Allah" , {
+            style: {
+              background: "#000000", 
+              color: "#ffff",         
+            },
+          });
+        // Add your copy logic here, for example:
+        navigator.clipboard.writeText("Your text to copy");
+      
+      };
+    const handleShare = () => {
+        toast.success("Coming Soon In Sha Allah" , {
+            style: {
+              background: "#000000", 
+              color: "#ffff",         
+            },
+          });
+        // Add your copy logic here, for example:
+        navigator.clipboard.writeText("Your text to copy");
+      
+      };
     return (
         <div>
              <div className="mt-5  bg-white w-full p-5 rounded-md border">
@@ -23,11 +59,11 @@ const CustomMainCategori = ({image,title,description,reference, referenceTitle,}
         <div className="flex gap-5 justify-end cursor-pointer">
           
             
-             <span className="tooltip" data-tip="Copy "> <MdOutlineContentCopy/> </span>
-            <span className="tooltip" data-tip="Bookmark"> <CiBookmark/> </span>
-            <span className="tooltip" data-tip="Memories"> <FaRegLightbulb/> </span>
-            <span className="tooltip" data-tip="Share"> <IoShareSocialOutline/> </span>
-            <span className="tooltip" data-tip="Report"> <MdReportGmailerrorred/> </span> 
+             <span onClick={handleCopy} className="tooltip" data-tip="Copy "> <MdOutlineContentCopy/> </span>
+            <span onClick={handleShare} className="tooltip" data-tip="Bookmark"> <CiBookmark/> </span>
+            <span onClick={handleMemories} className="tooltip" data-tip="Memories"> <FaRegLightbulb/> </span>
+            <span onClick={handleShare} className="tooltip" data-tip="Share"> <IoShareSocialOutline/> </span>
+            <span onClick={handleMemories} className="tooltip" data-tip="Report"> <MdReportGmailerrorred/> </span> 
 
           
         </div>
