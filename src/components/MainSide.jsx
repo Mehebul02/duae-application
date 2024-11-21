@@ -51,11 +51,8 @@ const MainSide = () => {
         />
         <CustomMainCategori
           image={duacard}
-          title="2. The servant is dependent on his Lord #2"
-          description=" All human beings depend on Allah for their welfare and prevention of
-            evil in various matters of their religion and world. Allah says
-            (interpretation of the meaning): O mankind, you are those in need of
-            Allah, while Allah is the Free of need, the Praiseworthy."
+          title="2. Conditions for Dua to be successful"
+          description=" All human beings depend on Allah for their welfare and prevention of evil in various matters of their religion and world. Allah says (interpretation of the meaning): O mankind, you are those in need of Allah, while Allah is the Free of need, the Praiseworthy."
           reference="Reference:"
           referenceTitle="Surah Al-Fatir 35:15"
         />
